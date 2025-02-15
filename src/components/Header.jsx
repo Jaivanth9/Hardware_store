@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/images/Blessify.jpeg";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
