@@ -1,5 +1,4 @@
 import React from "react";
-
 const ProductCard = ({ product, onAddToCart, onRemoveFromCart, cartItem }) => {
   return (
     <div className="bg-white shadow-md rounded-md overflow-hidden relative">

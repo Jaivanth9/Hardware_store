@@ -48,7 +48,7 @@ export default function Login() {
           />
         </div>
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
-
+        <form action="/login" method="post">
         {/* Display Error Message */}
         {error && <div className="text-red-500 text-center mb-4">{error}</div>}
 
@@ -81,6 +81,7 @@ export default function Login() {
             Sign Up
           </span>
         </p>
+        </form>
       </div>
     </div>
   );

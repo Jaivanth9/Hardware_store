@@ -58,7 +58,7 @@ export default function Signup() {
           <img src={logo} alt="Logo" className="w-20 h-20 rounded-full" />
         </div>
         <h2 className="text-2xl font-bold mb-4 text-center">Signup</h2>
-
+        <form action="/signup" method="post">
         {/* Display Error Message */}
         {error && <div className="text-red-500 text-center mb-4">{error}</div>}
 
@@ -96,6 +96,7 @@ export default function Signup() {
         >
           Signup
         </button>
+        </form>
       </div>
     </div>
   );
